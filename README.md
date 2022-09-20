@@ -20,6 +20,7 @@
 <br>
 
 ### 2. 유스케이스 명세서
+#### [회원가입]  
 
 ![image](https://user-images.githubusercontent.com/111114507/191260666-df86611b-123f-4646-84de-e1437ebadacc.png)
 <br>
