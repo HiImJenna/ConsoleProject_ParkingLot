@@ -39,7 +39,8 @@
 
 #### [손정원👩 - 입차 & 출차]  
 ![image](https://user-images.githubusercontent.com/111114507/191261732-2e6ce701-263a-4bab-8d17-d9e89f1ca3b3.png)
-![image](https://user-images.githubusercontent.com/111114507/191261732-2e6ce701-263a-4bab-8d17-d9e89f1ca3b3.png)
+![image](https://user-images.githubusercontent.com/111114507/191504729-5c79db11-a436-4561-8e8a-6401ecd12e15.png)
+
 <br>
 
 #### [김찬수🧑 - 결제]  
@@ -860,6 +861,7 @@ public class AdminService {
 ```
 </details>
 </details>
+ 
 
 ### 내일 할 것📝
 1) 조별
