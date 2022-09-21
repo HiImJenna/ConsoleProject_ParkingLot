@@ -1,7 +1,11 @@
-package round3;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.HashMap;
 
 import javax.xml.namespace.QName;
@@ -48,46 +52,12 @@ public class ParkingInfoRepository {
             ParkingInfo pi = map.get(carNumber);
 
             oos.close();
-         fis.close();
+            fos.close();
             bos.close();
 
         } catch (Exception e) {
             System.out.println("파일을 불러오는데 실패하였습니다.");
             e.printStackTrace();
         }
-
-        return pi;
     }
 }
-/*
-    public String piTotalSale () {
-        File file = new File("ParkingInfo.txt");
-
-        try {
-            FileInputStream fos = new FileInputStream(file);
-            ObjectInputStream oos = new ObjectInputStream(fos);
-            BufferedInputStream bos = new BufferedInputStream(oos);
-
-            map = (HashMap) bos.readObject();
-            ParkingInfo piSum = map.get(paymentTime);
-
-            Calendar cal = Calendar.getInstance();
-            String format = "yyyy-MM-dd";
-            SimpleDateFormat sales = new SimpleDateFormat(format);
-            cal.add(cal.DATE, - ); // 받아온 날짜만큼 뺀다.
-            String date = sales.format(cal.getTime());
-            System.out.println(date);
-
-
-            oos.close();
-            fis.close();
-            bos.close();
-
-        } catch (Exception e) {
-            System.out.println("파일을 불러오는데 실패하였습니다.");
-            e.printStackTrace();
-        }
-        return piSum;
-    }
-}
-*/

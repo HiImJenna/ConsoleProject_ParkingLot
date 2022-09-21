@@ -12,6 +12,27 @@ public class DefaultInfo {
         this.extraTime = extraTime;
         this.totalCarCapacity = totalCarCapacity;
     }
+    
+    public int getPrice() {
+        return Price;
+    }
+
+
+    public String getTime() {
+        return time;
+    }
+
+    public int getExtraPrice() {
+        return extraPrice;
+    }
+
+    public String getExtraTime() {
+        return extraTime;
+    }
+
+    public int getTotalCarCapacity() {
+        return totalCarCapacity;
+    }
 
     public void setPrice(int price) {
         Price = price;
@@ -32,5 +53,4 @@ public class DefaultInfo {
     public void setTotalCarCapacity(int totalCarCapacity) {
         this.totalCarCapacity = totalCarCapacity;
     }
-
 }
