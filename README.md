@@ -536,9 +536,6 @@ public class TicketUserRepository {
 
 
 ### < 오전 🌞 >
-<details>
-<summary>here!</summary>
-
 
 #### [ 회의 ]
 1. 클래스명 번경
@@ -561,11 +558,8 @@ public class TicketUserRepository {
 3. TicketSales & ParkingManager : 고윤섭, 김찬수
 <br>
 <br>
-</details>
 
 ### < 오후 🌝 >
-<details>
-<summary>here!</summary>
 
 <br>
 
@@ -633,8 +627,6 @@ public class ParkingInfoRepository {
 
 }
 ``` 
-</details>
-
 
 #### [ 💭 나의 수행내용 2 ] : searchSale() 메소드 구상, setPrice() 메소드 작성 changeCapacity() 메소드 구상
 <details>
