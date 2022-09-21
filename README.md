@@ -716,11 +716,8 @@ int newCapacity = Integer.parseInt(sc.nextLine());
 </details>
 <br>
 
-### < 오후 🌝 -2 >
--------------------
-
-#### ❕ 이전 작성한 코드 세분화 시키기
 #### [ 변경사항 ]
+- 이전 작성한 코드 세분화 시키기
 - default 값을 모아두는 defaultInfo 클래스를 생성하고 주소값을 받아오기로! (기존에 sale 클래스에 있었음)
 
 <details>
