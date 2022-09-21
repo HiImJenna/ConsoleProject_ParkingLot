@@ -125,6 +125,9 @@
 <br>
 
 ### < 오전 🌞 >
+<details>
+<summary>here!</summary>
+
 ### 1. 클래스다이어그램 작성
 #### [초안]
 ![KakaoTalk_Photo_2022-09-21-00-59-24](https://user-images.githubusercontent.com/111114507/191307396-cb81e274-cc97-46fe-bc77-b492324e12fe.jpeg)
@@ -509,6 +512,8 @@ public class TicketUserRepository {
 
 <br>
 
+</details>
+
 ### 📌 내일 할 것
 - [ ] 코드 큰 틀 작성한 것 재확인
 - [ ] 코드 역할 분담하여 작성
@@ -529,7 +534,11 @@ public class TicketUserRepository {
 - [ ] 클래스다이어그램 수정
 <br>
 
+
 ### < 오전 🌞 >
+<details>
+<summary>here!</summary>
+
 
 #### [ 회의 ]
 1. 클래스명 번경
@@ -552,8 +561,11 @@ public class TicketUserRepository {
 3. TicketSales & ParkingManager : 고윤섭, 김찬수
 <br>
 <br>
+</details>
 
 ### < 오후 🌝 >
+<details>
+<summary>here!</summary>
 
 <br>
 
@@ -856,10 +868,20 @@ public class AdminService {
 }
 ```
 </details>
+</details>
 
-### 내일 할 것📝
+### 내일 할 것
+1) 조별
 - [ ] 코드 진행상황 보고, 합치기
 - [ ] 자료구조 부분 로직 구성
 - [ ] 클래스다이어그램 수정
 - [ ] 체크리스트
 - [ ] Trouble-Shooting
+2) 나
+- [ ] searchCarNumber()
+- [ ] showMember()
+- [ ] searchSale()
+<br>
+
+</details>
+
