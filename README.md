@@ -557,9 +557,12 @@ public class TicketUserRepository {
 [고윤섭 👨]
 [김찬수 👨]
 <br>
+<br>
 
 ### < 오후 🌝 >
-#### 💭 나의 수행내용 1 : ParkingInfoRepository에서 파일을 save 하고 load 하는 기능을 구현함
+<br>
+
+#### <💭 나의 수행내용 1> : ParkingInfoRepository에서 파일을 save 하고 load 하는 기능을 구현함
 
 <details>
 <summary>코드</summary>
@@ -626,7 +629,7 @@ public class ParkingInfoRepository {
 </details>
 
 
-#### 💭 나의 수행내용 2 : AdminService -  / searchSale() & changeCapacity() 구상
+#### <💭 나의 수행내용 2 >
 <details>
 <summary>[searchSale() 메소드 구상]</summary>
 
