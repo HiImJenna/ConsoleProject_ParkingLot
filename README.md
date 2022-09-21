@@ -559,7 +559,7 @@ public class TicketUserRepository {
 <br>
 
 ### < 오후 🌝 >
-#### 나의 수행내용 1 : ParkingInfoRepository에서 파일을 save 하고 load 하는 기능을 구현함
+#### 💭 나의 수행내용 1 : ParkingInfoRepository에서 파일을 save 하고 load 하는 기능을 구현함
 
 <details>
 <summary>코드</summary>
@@ -626,7 +626,7 @@ public class ParkingInfoRepository {
 </details>
 
 
-#### 나의 수행내용 2 : Admin Service 메소드 작성
+#### 💭 나의 수행내용 2 : Admin Service 메소드 작성
 <details>
 <summary>코드</summary>
 
