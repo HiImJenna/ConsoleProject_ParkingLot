@@ -125,8 +125,6 @@
 <br>
 
 ### < 오전 🌞 >
-<details>
-<summary>here!</summary>
 
 ### 1. 클래스다이어그램 작성
 #### [초안]
@@ -512,7 +510,6 @@ public class TicketUserRepository {
 
 <br>
 
-</details>
 
 ### 📌 내일 할 것
 - [ ] 코드 큰 틀 작성한 것 재확인
@@ -559,8 +556,8 @@ public class TicketUserRepository {
 <br>
 <br>
 
-### < 오후 🌝 >
 
+### < 오후 🌝 >
 <br>
 
 #### [ 💭 나의 수행내용 1 ] : ParkingInfoRepository에서 파일을 save 하고 load 하는 기능을 구현함
@@ -627,6 +624,8 @@ public class ParkingInfoRepository {
 
 }
 ``` 
+</details>
+
 
 #### [ 💭 나의 수행내용 2 ] : searchSale() 메소드 구상, setPrice() 메소드 작성 changeCapacity() 메소드 구상
 <details>
@@ -648,7 +647,6 @@ return days;
 }
 ```
 -> 데이터가 만들어있지 않아서 구현의 한계 ... 
-</details>
 
 <details>
 <summary>- setPrice() 메소드 작성</summary>
@@ -862,7 +860,7 @@ public class AdminService {
 </details>
 </details>
 
-### 내일 할 것
+### 내일 할 것📝
 1) 조별
 - [ ] 코드 진행상황 보고, 합치기
 - [ ] 자료구조 부분 로직 구성
@@ -873,7 +871,5 @@ public class AdminService {
 - [ ] searchCarNumber()
 - [ ] showMember()
 - [ ] searchSale()
-<br>
 
 </details>
-
