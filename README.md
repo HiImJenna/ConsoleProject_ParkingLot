@@ -626,11 +626,10 @@ public class ParkingInfoRepository {
 </details>
 
 
-#### 💭 나의 수행내용 2 : AdminService - setPrice()메소드 작성 / searchSale() & changeCapacity() 구상
+#### 💭 나의 수행내용 2 : AdminService -  / searchSale() & changeCapacity() 구상
 <details>
-<summary>코드</summary>
+<summary>[searchSale() 메소드 구상]</summary>
 
-#### [searchSale()]
 ```java
 public int searchSale() {
 // 입력
@@ -647,7 +646,12 @@ return days;
 }
 ```
 -> 데이터가 만들어있지 않아서 구현의 한계 ... 
+</details>
+
 <br>
+
+<details>
+<summary>[setPrice() 메소드 작성]</summary>
 
 #### [setPrice()]
 ```java
@@ -689,8 +693,11 @@ private void setPrice() { //관리자 요금 설정
     else {System.out.println("올바른 메뉴를 선택해주세요");}
     }
 ```
+</details>
 
-#### [changeCapacity()]
+<details>
+<summary>[changeCapacity() 메소드 구상]</summary>
+
 ```java
 private void changeCapacity() {
 
@@ -709,7 +716,6 @@ int newCapacity = Integer.parseInt(sc.nextLine());
 ```
 -> 기본 값들을 어느 클래스에 정의해야하는지에 대한 의논 진행. ex) 주차장 기본 대수 
 <br>
-
 
 </details>
 <br>
