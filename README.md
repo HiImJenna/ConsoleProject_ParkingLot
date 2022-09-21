@@ -543,16 +543,13 @@ public class TicketUserRepository {
 <br>
 
 #### [ 역할 분담 ]
-#### < Parking Info & Admin >
-손정원, 김종민
+1. Parking Info & Admin : 손정원, 김종민
 <br>
 
-#### < Payment & TicketUser >
-이영남, 심승복
+2.  Payment & TicketUser : 이영남, 심승복
 <br>
 
-#### < TicketSales & ParkingManager >
-고윤섭, 김찬수
+3. TicketSales & ParkingManager : 고윤섭, 김찬수
 <br>
 <br>
 
