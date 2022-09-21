@@ -524,8 +524,8 @@ public class TicketUserRepository {
 -----------------------------
 
 ### To-Do List📝
-- [ ] 코드 큰 틀 작성한 것 재확인
-- [ ] 코드 역할 분담하여 작성
+- [x] 코드 큰 틀 작성한 것 재확인
+- [x] 코드 역할 분담하여 작성
 - [ ] 클래스다이어그램 수정
 <br>
 
@@ -542,7 +542,7 @@ public class TicketUserRepository {
 
 <br>
 
-### 1. 역할 분담
+#### [ 역할 분담 ]
 #### < Parking Info & Admin >
 [손정원 👩]
 [김종민 👨]
@@ -560,10 +560,10 @@ public class TicketUserRepository {
 <br>
 
 ### < 오후 🌝 >
------------------
+
 <br>
 
-#### <💭 나의 수행내용 1> : ParkingInfoRepository에서 파일을 save 하고 load 하는 기능을 구현함
+#### [ 💭 나의 수행내용 1 ] : ParkingInfoRepository에서 파일을 save 하고 load 하는 기능을 구현함
 
 <details>
 <summary>코드</summary>
@@ -630,7 +630,7 @@ public class ParkingInfoRepository {
 </details>
 
 
-#### <💭 나의 수행내용 2 >
+#### [ 💭 나의 수행내용 2 ]
 <details>
 <summary>[searchSale() 메소드 구상]</summary>
 
@@ -728,7 +728,7 @@ int newCapacity = Integer.parseInt(sc.nextLine());
 -------------------
 
 #### ❕ 이전 작성한 코드 세분화 시키기
-#### 변경사항
+#### [ 변경사항 ]
 - default 값을 모아두는 defaultInfo 클래스를 생성하고 주소값을 받아오기로! (기존에 sale 클래스에 있었음)
 
 <details>
@@ -867,3 +867,10 @@ public class AdminService {
 }
 ```
 </details>
+
+### 내일 할 것📝
+- [ ] 코드 진행상황 보고, 합치기
+- [ ] 자료구조 부분 로직 구성
+- [ ] 클래스다이어그램 수정
+- [ ] 체크리스트
+- [ ] Trouble-Shooting
