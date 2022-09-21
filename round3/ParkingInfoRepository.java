@@ -45,15 +45,15 @@ public class ParkingInfoRepository {
       try {
          FileInputStream fos = new FileInputStream(file);
          ObjectInputStream oos = new ObjectInputStream(fos);
-            BufferedInputStream bos = new BufferedInputStream(oos);
+         BufferedInputStream bos = new BufferedInputStream(oos);
 
-            map = (HashMap) bos.readObject();
+         map = (HashMap) bos.readObject();
 
-            ParkingInfo pi = map.get(carNumber);
+         ParkingInfo pi = map.get(carNumber);
 
-            oos.close();
-            fos.close();
-            bos.close();
+         oos.close();
+         fos.close();
+         bos.close();
 
         } catch (Exception e) {
             System.out.println("파일을 불러오는데 실패하였습니다.");
