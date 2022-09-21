@@ -626,7 +626,7 @@ public class ParkingInfoRepository {
 
 #### [ 💭 나의 수행내용 2 ]
 <details>
-<summary>[searchSale() 메소드 구상]</summary>
+<summary>[ 1. searchSale() 메소드 구상 ]</summary>
 
 ```java
 public int searchSale() {
@@ -646,10 +646,8 @@ return days;
 -> 데이터가 만들어있지 않아서 구현의 한계 ... 
 </details>
 
-<br>
-
 <details>
-<summary>[setPrice() 메소드 작성]</summary>
+<summary>[ 2. setPrice() 메소드 작성 ]</summary>
 
 #### [setPrice()]
 ```java
@@ -694,7 +692,7 @@ private void setPrice() { //관리자 요금 설정
 </details>
 
 <details>
-<summary>[changeCapacity() 메소드 구상]</summary>
+<summary>[ 3. changeCapacity() 메소드 구상 ]</summary>
 
 ```java
 private void changeCapacity() {
