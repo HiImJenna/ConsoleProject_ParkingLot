@@ -626,15 +626,102 @@ public class ParkingInfoRepository {
 </details>
 
 
-#### 💭 나의 수행내용 2 : Admin Service 메소드 작성
+#### 💭 나의 수행내용 2 : AdminService - setPrice()메소드 작성 / searchSale() & changeCapacity() 구상
 <details>
 <summary>코드</summary>
 
+#### [searchSale()]
 ```java
+public int searchSale() {
+// 입력
+Scanner sc = new Scanner(System.in);
+System.out.println("매출을 조회할 기간을 입력하세요. ex) 7 ");
+int days = Integer.parseInt(sc.nextLine());
 
+//손종-parkingrefo / 고김-     => 기간 분류 하면 searchSale에서 결제금액 합치기 = total 매출
+
+
+// 결제 금액, 결제 시간
+
+return days;
+}
+```
+-> 데이터가 만들어있지 않아서 구현의 한계 ... 
+<br>
+
+#### [setPrice()]
+```java
+private void setPrice() { //관리자 요금 설정
+       
+    System.out.println("< 요금 변경 메뉴 >");
+    System.out.println("변경하실 요금 유형을 선택하세요");
+    Scanner sc = new Scanner(System.in);
+    int changePrice = Integer.parseInt(sc.nextLine());
+
+    // 1. 기본요금 2. 추가요금 3. 정기권요금
+    if(changePrice == 1)  {
+    System.out.println("기본 요금의 시간을 재설정해주세요");
+    int newTime = Integer.parseInt(sc.nextLine());
+    sale.getdefaultTime = newTime;
+
+    System.out.println("기본 요금을 재설정해주세요");
+    int newPrice = Integer.parseInt(sc.nextLine());
+    sale.getdefaultPrice = newPrice;
+
+    } else if (changePrice == 2){
+    System.out.println("추가 요금의 시간을 재설정해주세요");
+    int newTime2 = Integer.parseInt(sc.nextLine());
+    sale.getExtraTime = newTime2;
+    
+    System.out.println("추가 요금을 재설정해주세요");
+    int newPrice2 = Integer.parseInt(sc.nextLine());
+    sale.getExtraPrice = newPrice2;
+
+    } else if (changePrice == 3) {
+    System.out.println("정기권의 기간을 재설정해주세요");
+    int newTime3 = Integer.parseInt(sc.nextLine());
+    sale.getTermTime = newTime3;
+
+    System.out.println("정기권의 요금을 재설정해주세요");
+    int newPrice3 = Integer.parseInt(sc.nextLine());
+    sale.getTermPrice = newPrice3;
+    }
+    else {System.out.println("올바른 메뉴를 선택해주세요");}
+    }
 ```
 
+#### [changeCapacity()]
+```java
+private void changeCapacity() {
+
+//주차장 디폴트값 어디에?
+
+/**
+ * 주차 차량 수 변경
+ */
+System.out.println("< 주차 가능 대수 변경 메뉴 >");
+System.out.println("현재값 : "  /* + 주차가능상태값 */);
+System.out.println("변경하실 주차 가능 대수를 입력해주세요");
+int newCapacity = Integer.parseInt(sc.nextLine());
+/*주차가능대수값 = */  newCapacity;
+//주차가능대수 있는 클래스 생성자도 만들어야함
+}
+```
+-> 기본 값들을 어느 클래스에 정의해야하는지에 대한 의논 진행. ex) 주차장 기본 대수 
+<br>
 
 
+</details>
+<br>
 
+#### 조원 수행 내용
+- 김찬수 : Parking Manager class의 out() 메소드 작성
+- 김종민 & 이영남 : 코드 틀 다듬기
+- 고윤섭 : 
+- 심승복 : 
 
+#### 변경사항
+1. 
+2. 
+3. 
+4. 
