@@ -1,6 +1,14 @@
 # ConsoleProject_ParkingLot 🚗
 <br>
 
+<details>
+<summary>Project</summary>
+
+### 1. [09.19](https://github.com/HiImJenna/ConsoleProject_ParkingLot#220919-)
+### 2. [09.20](https://github.com/HiImJenna/ConsoleProject_ParkingLot#220920-)
+// ### 3. [09.21]()
+
+
  
 ## 22.09.19 📅
 -----------------------------
@@ -133,9 +141,373 @@
 
 ### < 오후 🌝 >
 ### 2. 코드 큰 틀 작성
+<details>
+<summary>코드</summary>
+
+#### [관리자]
 ```java
-/////////코드////////
+public class Admin {
+
+    private String id;
+
+    private String password;
+
+ 
+
+    public Admin(String id, String password) {
+
+        this.id = id;
+
+        this.password = password;
+    }
+}
 ```
+<br>
+
+#### [Admin Service]
+```java
+public class AdminService {
+
+    private Admin admin;
+    private ParkingInfoRepository  
+     * 매출 조회
+     */
+    private void searchSale() {
+        // 결제 금액, 결제 시간
+        // 입력
+
+    }
+
+    /**
+     * 회원 등록
+     */
+    private void addMember() {
+        // 정기권을 사용하기 위해 회원가입
+        // 입력, 차량번호, 휴대전화번호
+
+        // 정기권 종류가 있으면 좋을 것 같다
+        // TermTicket class 를 사용한다.
+
+        // 결제 ???????
+    }
+
+    /**
+     * 회원 삭제
+     */
+    private void removeMember() {
+        // 자동차번호
+    }
+
+    /**
+     * 요금 설정
+     */
+    private void setPrice() {
+        /**
+         * 정기권 금액 변경
+         *
+         * 기본이용료 변경
+         */
+    }
+
+    /**
+     * 주차 차량 수 변경
+     */
+    private void changeCapacity() {
+    }
+
+    /**
+     * 특정 차량 입출차 내역 조회
+     * 차량번호로 조회하기
+     */
+    private void searchCarNumber() {
+        // 차량 번호를 받아서 차량 입출차 기록 조회
+    }
+
+    void run() {
+
+        // 관리자 인증
+
+        int input = 0;
+        while (true) {
+            switch (input) {
+                case 1:
+                    this.searchSale();
+                    break;
+                case 2:
+                    this.addMember();
+                    break;
+                case 3:
+                    this.removeMember();
+                    break;
+                case 4:
+                    this.setPrice();
+                    break;
+                case 5:
+                    this.changeCapacity();
+                    break;
+                case 6:
+                    this.searchCarNumber();
+                    break;
+                case 7: // 정기권 사용자 목록 보기
+                    break;
+            }
+        }
+    }
+
+    /**
+     * 관리자 인증 기능
+     */
+}    
+```
+<br>
+
+#### [Client Main]
+```java
+public class ClientMain {
+    public static void main(String[] args) {
+        // 차량 제한 입력 받기
+        ParkingManagerService pm = new ParkingManagerService(100);
+        pm.run();
+    }
+}
+```
+<br>
+
+#### [ParkingInfoRepository]
+```java
+public class ParkingInfoRepository {
+}
+```
+<br>
+
+#### [Parking Manager Service]
+```java
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+
+public class ParkingManagerService {
+
+    private BufferedReader br;
+    private int limitCount;
+    private paymentService paymentService;
+    private HashMap<String, ParkingInfo> map;
+    private int carTotalNumber;
+    private TicketUserRepository ticketUserRepository;
+    // 맵이나 어레이리스트로 차량 관리 iv;
+    //private HashMap<String, > manager;
+    // 유틸 클래스 iv
+
+    public ParkingManagerService(int limitCount) {
+        this.limitCount = limitCount;
+        this.carTotalNumber = 0;
+        map = new HashMap<>();
+        br = new BufferedReader(new InputStreamReader(System.in));
+    }
+
+    /**
+     * 입차
+     */
+    private void in() {
+        // 차량번호 입력 (데이터 검증 필요!
+        //          => 유효한 차 번호)
+
+        // 입차시간 구하기 (utils 사용)
+
+        // 회원/비회원 구분 (IO를 통해 찾아보기)
+
+        // 회원일 경우 => 정기권 남은 기간 보여주기
+        // 비회원일 경우 => 입차시간 보여주기
+    }
+
+    /**
+     * 사전 결제하기
+     */
+//    private void makePrePayment() {
+//    }
+
+    /**
+     * 출차 하기
+     * 어려울 것 같다.
+     */
+    private void out() {
+
+        // 차번호 입력
+        ParkingInfo parkingInfo = map.get("1234");
+
+        // 회원 유무 파악
+
+        // 사전 결제 유무 파악
+        // 시간 초과 파악
+        // 초과 시, 초과금 (유예시간을 둠)
+
+        // 사전 결제를 하지 않은 경우
+
+        // 결제 기능 (차량 할인 판단)
+        paymentService.calculateOutPrice(parkingInfo);
+    }
+
+    /**
+     * 정기권 구매
+     */
+    private void signIn() {
+        // 정기권을 사용하기 위해 회원가입
+
+        // 입력, 차량번호, 휴대전화번호
+
+        // 정기권 종류가 있으면 좋을 것 같다
+        // TermTicket class 를 사용한다.
+
+        // 정기권 결제
+        paymentService.payTermTicket();
+    }
+
+    private int choiceCommandNumber() {
+        /**
+         * 숫자만 입력받을 수 있게함
+         */
+        int inputValue = 0;
+        boolean isRight = true;
+        while (!isRight) {
+            try {
+                inputValue = Integer.parseInt(this.br.readLine());
+            } catch (Exception e) {
+                isRight = false;
+                System.out.println("숫자를 입력해주세요~!");
+            }
+        }
+        return inputValue;
+    }
+
+    public void run() {
+        int input = 0;
+        while (true) {
+            input = choiceCommandNumber();
+            switch (input) {
+                case 1: // 입차
+                    this.in();
+                    break;
+                case 2: // 사전 결제
+                    break;
+                case 3: // 출차
+                    break;
+                case 4: // 회원가입
+                    break;
+                case 5: // 관리자, 일단ㅋ run();
+                    break;
+                case 6: // 종료
+                    break;
+            }
+        }
+    }
+}
+```
+<br>
+
+#### [payment Service]
+```java
+public class paymentService {
+
+    /**
+     * 싱글톤 사용
+     */
+    private ParkingInfoRepository parkingInfoRepository;
+    private TicketUserRepository ticketUserRepository;
+    private TicketSalesRepository ticketSalesRepository;
+
+    /**
+     *
+     */
+    public void calculateOutPrice(ParkingInfo parkingInfo) {
+        // 시간계산
+        // 출차시간 - 입차시간 (utils 필요)
+        //parkingInfoRepository 사용
+    }
+
+    /**
+     * 정기권 결제
+     */
+    public void payTermTicket() {
+        // 차량번호 입력
+        // 일단 정보를 주고
+    }
+}
+```
+<br>
+
+#### [Sale]
+```java
+public class Sale {
+    private int price;
+    private String time;
+}
+```
+<br>
+
+#### [Term Ticket]
+```java
+public class TermTicket {
+    private int id; // 기간권 고유번호
+    private String carNumber; // 차번호
+    private String phoneNumber; // 전화번호
+    private String startTime; // 시작 시간 (결제시간)
+    private int termType; // 기간권 종류 (2주 4주 ....)
+//    private boolean expired; // true, false
+}
+```
+<br>
+
+#### [Ticket Sale Info]
+```java
+/**
+ * 회원권 판매할 때 사용, 매출
+ */
+public class TicketSalesInfo {
+    private String carNumber;
+    private String phoneNumber;
+    private String startTime;
+    private String endTime;
+    private int price;
+    private String paymentTime;
+}
+```
+<br>
+
+#### [Ticket Sales Repository]
+```java
+public class TicketSalesRepository {
+}
+```
+<br>
+
+#### [TicketUser]
+
+```java
+ */
+ * 같은 폰번호로 여러 차량에 대한 정기권 구매
+ */
+/**
+ * 종료 날짜만 덮어쓰기
+ * 회원권 구매시 신규 혹은 연장 판단
+ * 입차 시, 회원/비회원 구분 (IO를 통해 찾아보기)
+ * 회원 목록 조회
+ */
+
+public class TicketUser {
+    private String carNumber; // 유일무이
+    private String phoneNumber;
+    private String lastEndTime;
+}
+```
+<br>
+
+#### [Ticket User Repository]
+```java
+public class TicketUserRepository {
+}
+```
+<br>
+
 <br>
 
 ### 3. 클래스다이어그램 수정
@@ -167,9 +539,13 @@
 ### To-Do List📝
 - [ ] 코드 큰 틀 작성한 것 재확인
 - [ ] 코드 역할 분담하여 작성
+<br>
+
+### < 오전 🌞 >
+<br>
 
 ### 1. 역할 분담
-#### [손정원]
-
+#### [손정원 👩]
+#### [손정원 👩]
 
 
