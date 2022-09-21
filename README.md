@@ -2,7 +2,7 @@
 <br>
 
 <details>
-<summary>Project</summary>
+<summary>일일 수행 내용 바로가기!</summary>
 
 ### 1. [09.19](https://github.com/HiImJenna/ConsoleProject_ParkingLot#220919-)
 ### 2. [09.20](https://github.com/HiImJenna/ConsoleProject_ParkingLot#220920-)
