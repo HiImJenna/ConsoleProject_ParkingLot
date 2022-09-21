@@ -6,14 +6,12 @@
 
 ### 1. [09.19](https://github.com/HiImJenna/ConsoleProject_ParkingLot#220919-)
 ### 2. [09.20](https://github.com/HiImJenna/ConsoleProject_ParkingLot#220920-)
-// ### 3. [09.21]()
+### 3. [09.21](https://github.com/HiImJenna/ConsoleProject_ParkingLot#220921-)
 </details>
  
 ## 22.09.19 📅
 -----------------------------
-
 ### To-Do List📝
-
 - [x] 주제 선정
 - [x] 유스케이스 다이어그램 작성
 - [x] 유스케이스 명세서 작성 (역할분담)
@@ -96,7 +94,6 @@
 - 관리자는 출차할 차량을 직접 결제처리할 수 있다.
 
 ```
-
 <br>
 
 #### [시스템]  
@@ -108,11 +105,9 @@
 - 시스템은 차량번호, 입출차시간, 결제시간, 결제금액, 회원정보를 파일로 보관한다.
 ```
 
-
 ### 📌 내일 할 것
 - [ ] 클래스다이어그램
 - [ ] 코드 큰 틀 작성
-
 <br>
 
 ### 💭 느낀점
@@ -145,13 +140,8 @@
 #### [관리자]
 ```java
 public class Admin {
-
     private String id;
-
     private String password;
-
- 
-
     public Admin(String id, String password) {
 
         this.id = id;
@@ -160,25 +150,23 @@ public class Admin {
     }
 }
 ```
-<br>
-
 #### [Admin Service]
 ```java
 public class AdminService {
-
     private Admin admin;
     private ParkingInfoRepository  
-     * 매출 조회
-     */
+     /*매출 조회
+     /*
+
     private void searchSale() {
         // 결제 금액, 결제 시간
         // 입력
-
     }
 
     /**
      * 회원 등록
      */
+     
     private void addMember() {
         // 정기권을 사용하기 위해 회원가입
         // 입력, 차량번호, 휴대전화번호
@@ -538,10 +526,10 @@ public class TicketUserRepository {
 ### To-Do List📝
 - [ ] 코드 큰 틀 작성한 것 재확인
 - [ ] 코드 역할 분담하여 작성
+- [ ] 클래스다이어그램 수정
 <br>
 
 ### < 오전 🌞 >
-<br>
 
 #### [ 회의 ]
 1. 클래스명 번경
@@ -556,18 +544,86 @@ public class TicketUserRepository {
 
 ### 1. 역할 분담
 #### < Parking Info & Admin >
-#### [손정원 👩]
-#### [김종민 👨]
+[손정원 👩]
+[김종민 👨]
 <br>
 
 #### < Payment & TicketUser >
-#### [이영남 👨]
-#### [심승복 👨]
+[이영남 👨]
+[심승복 👨]
 <br>
 
 #### < TicketSales & ParkingManager >
-#### [고윤섭 👨]
-#### [김찬수 👨]
+[고윤섭 👨]
+[김찬수 👨]
+<br>
+
+### < 오후 >
+#### 나의 수행내용 : ParkingInfoRepository에서 파일을 save 하고 load 하는 기능을 구현함
+<details>
+<summary>코드</summary>
+
+</details>
+
+```java
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.util.HashMap;
+
+public class ParkingInfoRepository {
+    String filename = "ParkingInfo.txt";
+
+    //String - 차량번호
+    static HashMap<String, ParkingInfo> map = new HashMap<String, ParkingInfo>();
+
+    //파일 생성
+    public void save() {
+      File file = new File("ParkingInfo.txt");
+
+      try {
+         FileOutputStream fos = new FileOutputStream(file);
+         ObjectOutputStream oos = new ObjectOutputStream(fos);
+            BufferedOutputStream bos = new BufferedOutputStream(oos);
+         oos.writeObject(map); // map 안에는 (1,new ParkingInfo) (2,new ParkingInfo) (3, ParkingInfo)
+
+         oos.close();
+         fos.close();
+            bos.close();
+
+      } catch (Exception e) {
+         System.out.println("파일을 생성하는 도중 에러가 발생했습니다.");
+         e.printStackTrace();
+      }
+      System.out.println("'ParkingInfo'파일이 저장되었습니다.");
+   }
+
+    //파일에서 정보 불러오기 load 하기
+    public void load (String carNumber) {
+        File file = new File("ParkingInfo.txt");
+
+      try {
+         FileInputStream fos = new FileInputStream(file);
+         ObjectInputStream oos = new ObjectInputStream(fos);
+            BufferedInputStream bos = new BufferedInputStream(oos);
+
+            map = (HashMap) bos.readObject();
+
+            ParkingInfo pi = map.get(carNumber);
+
+            oos.close();
+         fis.close();
+            bos.close();
+
+        } catch (Exception e) {
+            System.out.println("파일을 불러오는데 실패하였습니다.");
+            e.printStackTrace();
+        }
+
+        return pi;
+    }
+
+}
+```
 
 
 
