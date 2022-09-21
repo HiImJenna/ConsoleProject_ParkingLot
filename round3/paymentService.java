@@ -1,9 +1,9 @@
-package kr.or.kosa;
+package round3;
 
 public class paymentService {
 
     /**
-     * ½Ì±ÛÅæ »ç¿ë
+     * ï¿½Ì±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
      */
     private ParkingInfoRepository parkingInfoRepository;
     private TicketUserRepository ticketUserRepository;
@@ -13,16 +13,16 @@ public class paymentService {
      *
      */
     public void calculateOutPrice(ParkingInfo parkingInfo) {
-        // ½Ã°£°è»ê
-        // ÃâÂ÷½Ã°£ - ÀÔÂ÷½Ã°£ (utils ÇÊ¿ä)
-        //parkingInfoRepository »ç¿ë
+        // ï¿½Ã°ï¿½ï¿½ï¿½ï¿½
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ã°ï¿½ - ï¿½ï¿½ï¿½ï¿½ï¿½Ã°ï¿½ (utils ï¿½Ê¿ï¿½)
+        //parkingInfoRepository ï¿½ï¿½ï¿½
     }
 
     /**
-     * Á¤±â±Ç °áÁ¦
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
      */
     public void payTermTicket() {
-        // Â÷·®¹øÈ£ ÀÔ·Â
-        // ÀÏ´Ü Á¤º¸¸¦ ÁÖ°í
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ ï¿½Ô·ï¿½
+        // ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö°ï¿½
     }
 }

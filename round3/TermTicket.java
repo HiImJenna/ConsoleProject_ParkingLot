@@ -1,3 +1,4 @@
+package round3;
 public class TermTicket {
     private int id; // �Ⱓ�� ������ȣ
     private String carNumber; // ����ȣ

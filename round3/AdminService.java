@@ -1,4 +1,6 @@
- import java.util.Scanner;
+package round3;
+
+import java.util.Scanner;
 public class AdminService {
 
     Sale sale = new Sale();

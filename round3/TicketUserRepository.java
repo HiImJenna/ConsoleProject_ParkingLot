@@ -1,4 +1,4 @@
-package kr.or.kosa;
+package round3;
 
 
 public class TicketUserRepository {

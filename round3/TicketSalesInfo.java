@@ -1,4 +1,4 @@
-package kr.or.kosa;
+package round3;
 
 /**
  * 회원권 판매할 때 사용, 매출

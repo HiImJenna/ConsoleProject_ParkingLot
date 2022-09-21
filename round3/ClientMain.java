@@ -1,8 +1,8 @@
-package kr.or.kosa;
+package round3;
 
 public class ClientMain {
     public static void main(String[] args) {
-        // Â÷·® Á¦ÇÑ ÀÔ·Â ¹Þ±â       
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ ï¿½Þ±ï¿½       
     	ParkingManagerService pm = new ParkingManagerService(100);
         pm.run();
     }

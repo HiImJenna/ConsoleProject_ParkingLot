@@ -1,4 +1,4 @@
-package kr.or.kosa;
+package round3;
 
 /**
  * 같은 폰번호로 여러 차량에 대한 정기권 구매

@@ -1,3 +1,5 @@
+package round3;
+
 public class DefaultInfo {
     private int Price;
     private String time;
