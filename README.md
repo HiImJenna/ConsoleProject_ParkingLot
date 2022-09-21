@@ -624,9 +624,9 @@ public class ParkingInfoRepository {
 </details>
 
 
-#### [ 💭 나의 수행내용 2 ]
+#### [ 💭 나의 수행내용 2 ] : searchSale() 메소드 구상, setPrice() 메소드 작성 changeCapacity() 메소드 구상
 <details>
-<summary>[ 1. searchSale() 메소드 구상 ]</summary>
+<summary>- searchSale() 메소드 구상</summary>
 
 ```java
 public int searchSale() {
@@ -647,7 +647,7 @@ return days;
 </details>
 
 <details>
-<summary>[ 2. setPrice() 메소드 작성 ]</summary>
+<summary>- setPrice() 메소드 작성</summary>
 
 #### [setPrice()]
 ```java
@@ -692,7 +692,7 @@ private void setPrice() { //관리자 요금 설정
 </details>
 
 <details>
-<summary>[ 3. changeCapacity() 메소드 구상 ]</summary>
+<summary>- changeCapacity() 메소드 구상</summary>
 
 ```java
 private void changeCapacity() {
