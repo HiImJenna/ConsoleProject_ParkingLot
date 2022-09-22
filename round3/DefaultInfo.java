@@ -1,5 +1,3 @@
-
-
 public class DefaultInfo {
     //기본요금
     private int Price = 1000; //1천원

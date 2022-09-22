@@ -43,4 +43,10 @@ public class ParkingInfo {
     public void setMemo(String memo) {
         this.memo = memo;
     }
+
+
+    public Integer getPrice() {
+        return price;
+    }
 }
+

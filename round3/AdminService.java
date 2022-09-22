@@ -1,3 +1,6 @@
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -10,37 +13,55 @@ public class AdminService {
     TicketUserRepository tur = new TicketUserRepository();
     private DefaultInfo defaultInfo; 
 
+    Calendar cal = Calendar.getInstance();    
+    SimpleDateFormat time = new SimpleDateFormat("yyyy-MM-dd");
+
     Scanner sc = new Scanner(System.in);
 
 
 // ************************************************************************************************************************************
+
+public String[] sendStartDay() { //매출조회를 위해 날짜 전송 함수
+    // 입력
+    System.out.println("매출 조회할 기간을 숫자만 입력하세요. ex) 7 ");
+    int days = Integer.parseInt(sc.nextLine()); 
+
+
+
+    String now = time.format(cal.getTime());            //현재
+    String startday = cal.add(Calendar.date, - (days));  //매출조회할 기준일 
     
+    return new String[]{startday, now};
+}
 
-    //로그인???
-    public AdminService() {
-        this.admin = new Admin("admin", "1q2w3e4r");
+public void searchSale(){    // 날짜 전송 후 받아온 자료값을 파라미터에 입력
+    
+    String[] result = sendStartDay(); //startday, now 값 
+
+    ArrayList<ParkingInfo> list1 = pir.findParkingSalesList(result); //startday 이후 입출차 매출 총배열 
+    ArrayList<TicketSalesInfo> list2 = tsr.findTicketSalesList(result); // startday 이후 회원권 매출 총배열
+
+    int i = 0;
+    int inoutSale = 0;
+    int memberSale = 0;
+
+    //for문 돌려서 list1, list2 각각 합계 구해서 총합 계산.
+    for(i = 0 ; i < list1.size() ; i++){    // 입출차 매출 총배열 합계
+        inoutSale += list1.get(i).getPrice();               
     }
+    for(i = 0 ; i < list2.size() ; i++){    // 회원권 매출 총배열 합계
+        memberSale += list2.get(i).getPrice();
+    }
+    int saleList = inoutSale + memberSale;          // 입출차 매출 + 회원권 매출 총합계
 
+    //출력부
+    System.out.println(result[0] + " ~ " + result[1] + " 기간의 매출을 조회합니다.");
+    System.out.println("입출차 매출건수 : " + list1.size() + " 회원권 매출건수 : " + list2.size());
+    System.out.println("입출차 매출액 : " + inoutSale + " 회원권 매출액 : " + memberSale);
+    System.out.println(saleList);       // 매출 합계 출력
+}
 
 // ************************************************************************************************************************************
-
-
-
-    public int searchSale() { //매출조회 => 7입력시 7일전날짜 구해서 저장, 현재날짜 저장 -> 영남메서드에서 매출금액 쭈루룩 뜬걸 가져옴 -> 더하기 //
-        // 입력
-        System.out.println("매출을 조회할 기간을 입력하세요. ex) 7 ");
-        int days = Integer.parseInt(sc.nextLine());
-       
-        //손종-parkingrefo / 고김-     => 기간 분류 하면 searchSale에서 결제금액 합치기 = total 매출
-
-        // 결제 금액, 결제 시간
-        return days;
-    }
-
-
-
-// ************************************************************************************************************************************
-
 
 
     private void manageMember(){ //회원목록은 ticketuserrepository에서 가져오기 //등록-ticketsale(구매) , 삭제 - remove ... 
@@ -85,9 +106,7 @@ public class AdminService {
     }
 
 
-
     // ************************************************************************************************************************************
-
 
 
     private void setPrice() { //관리자 요금 설정

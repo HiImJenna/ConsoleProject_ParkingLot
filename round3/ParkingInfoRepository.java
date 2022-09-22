@@ -7,6 +7,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import javax.xml.namespace.QName;
@@ -60,5 +61,9 @@ public class ParkingInfoRepository {
             System.out.println("파일을 불러오는데 실패하였습니다.");
             e.printStackTrace();
         }
+    }
+
+    public ArrayList<ParkingInfo> findParkingSalesList(String[] result) {
+        return null;
     }
 }

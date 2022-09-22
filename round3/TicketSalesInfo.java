@@ -10,4 +10,8 @@ public class TicketSalesInfo {
     private String endTime;
     private int price;
     private String paymentTime;
+    public int getPrice() {
+        return price;
+    }
+
 }
