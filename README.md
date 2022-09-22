@@ -864,16 +864,16 @@ public class AdminService {
 </details>
  
 
-### 내일 할 것
+### 📌 내일 할 것
 1) 조별
 - [x] 코드 진행상황 보고, 합치기
 - [x] 자료구조 부분 로직 구성
 - [ ] 클래스다이어그램 수정
 - [ ] 체크리스트
-- [ ] Trouble-Shooting
+- [x] Trouble-Shooting
 2) 나
-- [ ] searchCarNumber()
-- [ ] showMember()
+- [x] searchCarNumber()
+- [x] showMember()
 - [x] searchSale()
 
 </details>
@@ -884,15 +884,15 @@ public class AdminService {
 
 ### To-Do List📝
 1) 조별  
-- [ ] 코드 진행상황 보고, 합치기  
+- [x] 코드 진행상황 보고, 합치기  
 - [x] 자료구조 부분 로직 구성  
 - [ ] 클래스다이어그램 수정  
 - [ ] 체크리스트  
-- [ ] Trouble-Shooting  
+- [x] Trouble-Shooting  
 2) 나   
-- [ ] searchCarNumber()  
-- [ ] showMember()  
-- [ ] searchSale()  
+- [x] searchCarNumber()  
+- [x] showMember()  
+- [x] searchSale()  
 - [x] 피피티 큰 틀  
 <br>
 
@@ -1276,4 +1276,16 @@ public class DefaultInfo {
 }
 ```
 </details>
-.
+
+### Trouble - Shooting 🐞
+- implements Serializable
+- 정기권 만료시간 제대로 저장이 안됨
+
+<br>
+
+### 📌 내일 할 일
+- Trouble-Shooting
+- 시나리오 & 클래스다이어그램 & 유스케이스 수정
+- 피피티 조금씩 만들기
+- 체크리스트
+- 
