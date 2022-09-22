@@ -1015,7 +1015,7 @@ public class AdminService {
 
             while(true) {
                 if(CarNumber_check != false) {//유효한 차량번호일 경우
-                    // 정기권 dfdfs선택
+                    // 정기권 선택
                     System.out.println("결제할 정기권을 선택하세요.");
                     System.out.println("[1] 일권 : 10,000원 [2] 30일권 : 100,000원");
                     int pickTermType =  Integer.parseInt(sc.nextLine());
@@ -1135,7 +1135,7 @@ private void changeCapacity() { //관리자 주차대수 설정
         }
     }
 ```
-<details>
+</details>
 
 #### - runAdminService()
 
