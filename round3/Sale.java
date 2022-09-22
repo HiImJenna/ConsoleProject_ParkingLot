@@ -49,7 +49,4 @@ public class Sale {
     public void setTermTime(int termTime) {
         this.termTime = termTime;
     }
-
-    
-
 }
