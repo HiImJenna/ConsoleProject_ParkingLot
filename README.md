@@ -866,15 +866,15 @@ public class AdminService {
 
 ### 내일 할 것
 1) 조별
-- [ ] 코드 진행상황 보고, 합치기
-- [ ] 자료구조 부분 로직 구성
+- [x] 코드 진행상황 보고, 합치기
+- [x] 자료구조 부분 로직 구성
 - [ ] 클래스다이어그램 수정
 - [ ] 체크리스트
 - [ ] Trouble-Shooting
 2) 나
 - [ ] searchCarNumber()
 - [ ] showMember()
-- [ ] searchSale()
+- [x] searchSale()
 
 </details>
 <br>
@@ -894,8 +894,9 @@ public class AdminService {
 - [ ] showMember()  
 - [ ] searchSale()  
 - [x] 피피티 큰 틀  
+<br>
 
-### < 오전 >
+#### [ 💭 나의 수행내용 ]
 #### - showMember()
 <details>
 <summary>코드</summary>
@@ -1272,3 +1273,4 @@ public class DefaultInfo {
     }
 }
 ```
+
