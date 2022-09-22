@@ -1,4 +1,4 @@
-package round3;
+
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -39,7 +39,7 @@ public class ParkingInfoRepository {
       System.out.println("'ParkingInfo'파일이 저장되었습니다.");
    }
 
-    //파일에서 정보 불러오기 load 하기)
+    //파일에서 정보 불러오기 load 하기
     public void load (String carNumber) {
         File file = new File("ParkingInfo.txt");
 

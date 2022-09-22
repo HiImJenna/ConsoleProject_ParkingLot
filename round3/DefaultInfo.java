@@ -1,10 +1,23 @@
-package round3;
+
 
 public class DefaultInfo {
-    private int Price;
-    private String time;
-    private int extraPrice;
-    private String extraTime;
+    //기본요금
+    private int Price = 1000; //1천원
+    private String time = "30"; //분
+
+    //추가요금
+    private int extraPrice = 500; //500원
+    private String extraTime = "10"; //분
+
+    //정기권 - 일권
+    private int dailyTicketPrice = 10000; //1만원
+    private String dailyTickeTerm = "1";//일
+
+    //정기권 - 30일권
+    private int monthlyTicketPrice = 100000; //10만원
+    private String monthlyTicketTerm = "30";//일
+
+    //주차가능대수
     private int totalCarCapacity;
 
     public DefaultInfo(int price, String time, int extraPrice, String extraTime, int totalCarCapacity) {
@@ -18,7 +31,6 @@ public class DefaultInfo {
     public int getPrice() {
         return Price;
     }
-
 
     public String getTime() {
         return time;
