@@ -8,6 +8,7 @@
 ### 2. [09.20](https://github.com/HiImJenna/ConsoleProject_ParkingLot#220920-)
 ### 3. [09.21](https://github.com/HiImJenna/ConsoleProject_ParkingLot#220921-)
 ### 4. [09.22](https://github.com/HiImJenna/ConsoleProject_ParkingLot#220922-)
+### 5. [09.23](https://github.com/HiImJenna/ConsoleProject_ParkingLot#220923-)
 </details>
  
 ## 22.09.19 📅
@@ -1299,33 +1300,33 @@ public class DefaultInfo {
 - [ ] 체크리스트
 - [ ] 코드정의서
 
-### Trouble-Shooting
-[입차 후 사전결제 하려고 보면 입차한게 아니라고 뜸]
+### Trouble-Shooting 🐞
+[입차 후 사전결제 하려고 보면 입차한게 아니라고 뜸]  
 ![KakaoTalk_Image_2022-09-23-15-43-16](https://user-images.githubusercontent.com/111114507/191905391-40c97c33-06fe-4bdb-9a09-3f1efe3fda0e.png)
 <br>
 
-[이미 입차한 차인데 또 입차 허용]
+[이미 입차한 차인데 또 입차 허용]  
 ![KakaoTalk_Image_2022-09-23-15-45-07](https://user-images.githubusercontent.com/111114507/191905529-d9cef252-db18-4e74-827c-c512311f1f4d.png)
 <br>
 
-[입차했는데 관리자에서 조회안됨]
+[입차했는데 관리자에서 조회안됨]  
 ![image](https://user-images.githubusercontent.com/111114507/191905901-2c08482d-1cee-4969-b521-4e00b6398911.png)
 <br>
 
-[프로그램 종료 안됨]
+[프로그램 종료 안됨]  
 ![image](https://user-images.githubusercontent.com/111114507/191905846-b816d21d-c33c-498b-b551-f0aec89c2530.png)
 <br>
 
-[기간권 산 적 없는데 만료되었다고 뜸]
+[기간권 산 적 없는데 만료되었다고 뜸]  
 ![image](https://user-images.githubusercontent.com/111114507/191905901-2c08482d-1cee-4969-b521-4e00b6398911.png)
 <br>
 
-[관리자에서 회원등록 할 때 결제 안되고, 관리자에서 매출조회 안됨]
+[관리자에서 회원등록 할 때 결제 안되고, 관리자에서 매출조회 안됨]  
 ![image](https://user-images.githubusercontent.com/111114507/191905944-329584b2-257b-477e-bab2-36159574c975.png)
 <br>
 
-[입차 했는데 사전결제시 입차안했다고 뜸]
+[입차 했는데 사전결제시 입차안했다고 뜸]  
 ![image](https://user-images.githubusercontent.com/111114507/191906015-5b7658c9-b40b-4755-a62f-81704f80a08e.png)
 <br>
 
-[숫자(int) 넣어야되는데 string 넣었을때 return.. break.. 오류 뜨게!]
+[숫자(int) 넣어야되는데 string 넣었을때 return.. break.. 오류 뜨게!]  
