@@ -1,8 +1,8 @@
-# ConsoleProject_ParkingLot 🚗
+# 콘솔프로젝트 ConsoleProject_ParkingLot 🚗
 <br>
 
 <details>
-<summary>일일 수행 내용 바로가기!</summary>
+<summary>일일 수행 내용 바로가기! Daily tasks</summary>
 
 ### 1. [09.19](https://github.com/HiImJenna/ConsoleProject_ParkingLot#220919-)
 ### 2. [09.20](https://github.com/HiImJenna/ConsoleProject_ParkingLot#220920-)
@@ -14,55 +14,60 @@
 ## 22.09.19 📅
 -----------------------------
 ### To-Do List📝
-- [x] 주제 선정
-- [x] 유스케이스 다이어그램 작성
-- [x] 유스케이스 명세서 작성 (역할분담)
-- [x] 유스케이스 기반 시나리오 작성
+- [x] 주제 선정 Selecting subject
+- [x] 유스케이스 다이어그램 작성 Usecase Diagram
+- [x] 유스케이스 명세서 작성 (역할분담) Usecase
+- [x] 유스케이스 기반 시나리오 작성 Scenario
 
-### 1. 유스케이스 다이어그램
+### 1. 유스케이스 다이어그램 Usecase Diagaram
 <br>
 
-#### [초안]
+#### [초안 Draft]
 ![image](https://user-images.githubusercontent.com/111114507/191259115-f3f4b65a-0d8f-4b42-8bd0-ce185cde36da.png)
 ![image](https://user-images.githubusercontent.com/111114507/191260929-1b4f039b-b8b9-4b49-b681-15851a8561ab.png)
 <br>
 
 - 회원 : 회원가입, 입차, 출차, 결제 => 차량인증(정규표현식)
+- member : sign up, entrance, exit, payment => Car number verification(RegEx)
+  
 - 관리자 
     - 매출 조회, 회원 목록 조회, 주차장 관리 => 관리자 인증
     - -> 주차장 관리 : 요금변경(default값 존재), 총 주차대수 변경, 차량조회(입출차기록, 결제금액/결제예정금액, 차량 사진 ... )
+- admin
+    - cash up, member list, car park management => admin verification
+    - -> management : change price, change capacity, car list
 <br>
 
-### 2. 유스케이스 명세서
-#### [회원가입]  
+### 2. 유스케이스 명세서 Usecase
+#### [회원가입 Sign up]  
 
 ![image](https://user-images.githubusercontent.com/111114507/191260666-df86611b-123f-4646-84de-e1437ebadacc.png)
 <br>
 
-#### [손정원👩 - 입차 & 출차]  
+#### [손정원👩 - 입차 & 출차 entrance & exit]  
 ![image](https://user-images.githubusercontent.com/111114507/191261732-2e6ce701-263a-4bab-8d17-d9e89f1ca3b3.png)
 ![image](https://user-images.githubusercontent.com/111114507/191504729-5c79db11-a436-4561-8e8a-6401ecd12e15.png)
 
 <br>
 
-#### [김찬수🧑 - 결제]  
+#### [김찬수🧑 - 결제 payment]  
 ![image](https://user-images.githubusercontent.com/111114507/191262792-81f8b41e-7d0d-41c7-82c1-e9a4c97fbd88.png)
 <br>
 
-#### [고윤섭🧑 - 매출조회]  
+#### [고윤섭🧑 - 매출조회 cashup]  
 ![image](https://user-images.githubusercontent.com/111114507/191263037-c625369b-b4de-426d-9d98-1b3ab189b5d9.png)
 <br>
 
-#### [심승복🧑 - 회원관리]  
+#### [심승복🧑 - 회원관리 member management]  
 ![image](https://user-images.githubusercontent.com/111114507/191263301-d3e472bb-b385-47c6-8fd2-50e1891556ee.png)
 <br>
 
-#### [김종민🧑 - 주차장관리]  
+#### [김종민🧑 - 주차장관리 car park management]  
 ![image](https://user-images.githubusercontent.com/111114507/191263414-edbda19d-208b-4099-87cc-1d33d59ff970.png)
 <br>
 
-### 3. 시나리오
-#### [사용자]  
+### 3. 시나리오 Scenario
+#### [사용자 Member]  
 ```java
 - 사용자는 차량을 입차 시킬 수 있다. 차량 입차시 사용자는 차량 번호를 입력 한다.
 - 사용자는 차량입차를 완료하면 완료 메시지와 함께 초기 화면으로 돌아간다.
@@ -80,7 +85,7 @@
 ```
 <br>
 
-#### [관리자]  
+#### [관리자 Admin]  
 ```java
 - 관리자 계정 아이디는 Admin이며, 비밀번호는 1q2w3e4r이다.
 - 관리자는 관리자 계정으로 로그인한다.
@@ -99,7 +104,7 @@
 ```
 <br>
 
-#### [시스템]  
+#### [시스템 System]  
 ```java
 - 시스템은 사용자가 회원인지 비회원인지 구별한다
 - 시스템은 입출차 시간을 바탕으로  이용료를 산정한다. 
@@ -108,12 +113,12 @@
 - 시스템은 차량번호, 입출차시간, 결제시간, 결제금액, 회원정보를 파일로 보관한다.
 ```
 
-### 📌 내일 할 것
+### 📌 내일 할 것 To-do list
 - [ ] 클래스다이어그램
 - [ ] 코드 큰 틀 작성
 <br>
 
-### 💭 느낀점
+### 💭 느낀점 Lesson learned
 #### 교수님이 내주신 시나리오에 맞는 코드를 구현하는 것만 해보다가 직접 구체적인 시나리오를 작성해보니 어쩌면 코드 구현보다 시나리오 설계가 더 어려울지도 모르겠다고 생각했다. 하지만 구체적이고 탄탄한 시나리오가 존재해야 코드도 구현할 수 있기에 여러 경우의 수를 생각하여 설계해보고자 함께 노력했다. 추후에 코드를 구현하면서 시나리오를 변경하는 일이 불가피할 것 같은데, 꼼꼼히 이유와 변경 사항을 기록해야할 것 같다.
 
 <br>
@@ -123,25 +128,25 @@
 -----------------------------
 
 ### To-Do List📝
-- [x] 클래스다이어그램 작성
-- [x] 코드 큰 틀 작성
+- [x] 클래스다이어그램 작성 Class Diagram
+- [x] 코드 큰 틀 작성 Start programming
 <br>
 
-### < 오전 🌞 >
+### < 오전 morning 🌞 >
 
-### 1. 클래스다이어그램 작성
-#### [초안]
+### 1. 클래스다이어그램 작성 Class Diagram
+#### [초안 Draft]
 ![KakaoTalk_Photo_2022-09-21-00-59-24](https://user-images.githubusercontent.com/111114507/191307396-cb81e274-cc97-46fe-bc77-b492324e12fe.jpeg)
 #### - 유스케이스 다이어그램에 따라 클래스를 User(사용자), Admin(관리자), ParkingManager(주차관리시스템)으로 분류해보았다.
 <br>
 
 
-### < 오후 🌝 >
-### 2. 코드 큰 틀 작성
+### < 오후 afternoon 🌝 >
+### 2. 코드 큰 틀 작성 Start programming
 <details>
 <summary>코드</summary>
 
-#### [관리자]
+#### [관리자 admin]
 ```java
 public class Admin {
     private String id;
@@ -502,24 +507,24 @@ public class TicketUserRepository {
 
 <br>
 
-### 3. 클래스다이어그램 수정
-#### [수정 필요 인지]
+### 3. 클래스다이어그램 수정 Edit Class Diagram
+#### [수정 필요 인지 What should be changed?]
 ![KakaoTalk_Photo_2022-09-21-01-08-14](https://user-images.githubusercontent.com/111114507/191309451-c9ed8983-d95f-482c-84ed-6f2442f0a957.jpeg)
 #### -> 어제 작성한 클래스다이어그램을 그대로 코드에 구현하려다 보니 클래스를 세분화하는게 좋겠다고 판단하게 되어 관련 회의 진행
 <br>
 
-#### [수정본]
+#### [수정본 Result]
 ![KakaoTalk_Photo_2022-09-21-01-07-19](https://user-images.githubusercontent.com/111114507/191309268-f8c1c05c-ab5d-4bc4-91c6-a4fb036b808b.jpeg)
 
 <br>
 
 
-### 📌 내일 할 것
-- [ ] 코드 큰 틀 작성한 것 재확인
-- [ ] 코드 역할 분담하여 작성
+### 📌 내일 할 것 To-do list
+- [ ] 코드 큰 틀 작성한 것 재확인 check the code
+- [ ] 코드 역할 분담하여 작성 more programming
 <br>
 
-### 💭 느낀점
+### 💭 느낀점 Lesson learned
 #### - 시나리오를 나름 구체적으로 구상했다고 생각했지만 클래스다이어그램으로 그리려니 다시 생각해야하는 부분들도 존재했고 클래스간의 관계도를 생각해내는 것 또한 쉽지 않았다.내일 코드를 직접 작성하고 맞추다보면 클래스다이어그램의 수정도 불가피할 것 같다.
 <br>
 <br>
@@ -529,15 +534,15 @@ public class TicketUserRepository {
 -----------------------------
 
 ### To-Do List📝
-- [x] 코드 큰 틀 작성한 것 재확인
-- [x] 코드 역할 분담하여 작성
-- [ ] 클래스다이어그램 수정
+- [x] 코드 큰 틀 작성한 것 재확인 Review the code
+- [x] 코드 역할 분담하여 작성 Programming
+- [ ] 클래스다이어그램 수정 Edit Class Diagram
 <br>
 
 
-### < 오전 🌞 >
+### < 오전 morning 🌞 >
 
-#### [ 회의 ]
+#### [ 회의 discussion ]
 1. 클래스명 번경
 2. 관리자 접근을 parkingManager에서 분리할 지(사용자 메뉴 따로 run, 관리자 접근 따로 run) => 각각을 추상 or 인터페이스로..?
 3. util에서 simpleDataFormat 사용, 나중에 합치기 - 형식만 우선 통일해두자(초까지!)
@@ -548,7 +553,7 @@ public class TicketUserRepository {
 
 <br>
 
-#### [ 역할 분담 ]
+#### [ 역할 분담 divide up ]
 1. Parking Info & Admin : 손정원, 김종민
 <br>
 
@@ -560,10 +565,10 @@ public class TicketUserRepository {
 <br>
 
 
-### < 오후 🌝 >
+### < 오후 afternoon 🌝 >
 <br>
 
-#### [ 💭 나의 수행내용 1 ] : ParkingInfoRepository에서 파일을 save 하고 load 하는 기능을 구현함
+#### [ 💭 나의 수행내용 what I did 1 ] : ParkingInfoRepository에서 파일을 save 하고 load 하는 기능을 구현함
 
 <details>
 <summary>코드</summary>
@@ -630,7 +635,7 @@ public class ParkingInfoRepository {
 </details>
 
 
-#### [ 💭 나의 수행내용 2 ] : searchSale() 메소드 구상, setPrice() 메소드 작성 changeCapacity() 메소드 구상
+#### [ 💭 나의 수행내용 what I did 2 ] : searchSale() 메소드 구상, setPrice() 메소드 작성 changeCapacity() 메소드 구상
 <details>
 <summary>- searchSale() 메소드 구상</summary>
 
@@ -722,7 +727,7 @@ int newCapacity = Integer.parseInt(sc.nextLine());
 </details>
 <br>
 
-#### [ 변경사항 ]
+#### [ 변경사항 changes ]
 - 이전 작성한 코드 세분화 시키기
 - default 값을 모아두는 defaultInfo 클래스를 생성하고 주소값을 받아오기로! (기존에 sale 클래스에 있었음)
 
@@ -865,12 +870,12 @@ public class AdminService {
 </details>
  
 
-### 📌 내일 할 것
+### 📌 내일 할 것 To-do list
 1) 조별
 - [x] 코드 진행상황 보고, 합치기
 - [x] 자료구조 부분 로직 구성
 - [ ] 클래스다이어그램 수정
-- [ ] 체크리스트
+- [ ] 체크리스트 
 - [x] Trouble-Shooting
 2) 나
 - [x] searchCarNumber()
